@@ -13,7 +13,7 @@ if hist_button:
     fig = px.histogram(car_data, x="odometer")
 
     st.plotly_chart(fig, use_container_width=True)
-
+'''
 build_histogram = st.checkbox('Criar um histograma')
 
 if build_histogram:
@@ -22,3 +22,4 @@ if build_histogram:
 
     fig.px.histogram(car_data, x="odometer")
     st.plotly_chart(fig, use_container_width=True)
+'''
