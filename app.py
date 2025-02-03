@@ -20,6 +20,6 @@ if build_histogram:
 
     st.write('Criando um histograma para a coluna odometer')
 
-    fig.px.histogram(car_data, x="odometer")
+    fig = px.histogram(car_data, x="odometer")
     st.plotly_chart(fig, use_container_width=True)
 
