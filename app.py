@@ -16,7 +16,7 @@ if hist_button:
 
 build_dispersion = st.checkbox('Criar um gráfico de dispersão')
 
-if build_histogram:
+if build_dispersion:
 
     st.write('Criando um gráfico de dispersão')
 
