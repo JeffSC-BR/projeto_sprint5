@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-car_data = pd.read_csv('vehichles.csv')
+car_data = pd.read_csv('vehicles.csv')
 hist_button = st.header('Criar Histograma')
 
 if hist_button:
@@ -13,7 +13,7 @@ if hist_button:
     fig = px.histogram(car_data, x="odometer")
 
     st.plotly_chart(fig, use_container_width=True)
-'''
+
 build_histogram = st.checkbox('Criar um histograma')
 
 if build_histogram:
@@ -22,4 +22,4 @@ if build_histogram:
 
     fig.px.histogram(car_data, x="odometer")
     st.plotly_chart(fig, use_container_width=True)
-'''
+
