@@ -3,12 +3,11 @@ import streamlit as st
 import plotly.express as px
 
 car_data = pd.read_csv('vehicles.csv')
-hist_button = st.header('Criar Histograma')
+hist_button = st.button('Criar Histograma')
 
 if hist_button:
 
-    st.write(
-        'Criando um histograma para o conjunto de dados de anúncios de vendas de carros.')
+    st.write('Criando um histograma para o conjunto de dados de anúncios de vendas de carros.')
 
     fig = px.histogram(car_data, x="odometer")
 
